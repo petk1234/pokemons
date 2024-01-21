@@ -8,7 +8,7 @@ import { capitalLetter } from "../AllPokemonsPage/utils";
 import Types from "./Rows/Types";
 import Stats from "./Rows/Stats";
 import Moves from "./Rows/Moves";
-import notFoundImg from "../../assets/not-found.png";
+import notFoundImg from "/src/assets/not-found.png";
 import { NOT_FOUND_POKEMON } from "../../store/pokemons/controllers";
 import ReturnButton from "../../components/ReturnButton/ReturnButton";
 import Spinner from "../../components/Spinner/Spinner";

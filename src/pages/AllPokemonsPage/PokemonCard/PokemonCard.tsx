@@ -2,7 +2,7 @@ import { Props } from "./types";
 import cx from "classnames";
 import styles from "./pokemonCard.module.scss";
 import { capitalLetter } from "../utils";
-import notFoundImg from "../../../assets/not-found.png";
+import notFoundImg from "/src/assets/not-found.png";
 
 const PokemonCard = ({ types, name, img }: Props) => {
   return (

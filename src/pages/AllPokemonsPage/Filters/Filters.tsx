@@ -29,7 +29,7 @@ const Filters = () => {
       navigate("/" + value);
     }
   };
-  console.log(currentType);
+
   return (
     <>
       <SearchBar handleSearch={handleSearch} />
