@@ -1,0 +1,137 @@
+.pokemonCard {
+  width: 110px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  box-sizing: content-box;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.typesList {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.hider {
+  display: block;
+  //   overflow: hidden;
+  width: 100%;
+  //   text-overflow: ellipsis;
+  //   white-space: nowrap;
+}
+.pokemonType {
+  margin-right: 5px;
+  display: flex;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 12px;
+}
+.pokemonImage {
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 60%;
+}
+.cardTitle {
+  margin: 10px auto 5px auto;
+  font-weight: 1000px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.normal,
+.fighting,
+.flying,
+.poison,
+.ground,
+.rock,
+.bug,
+.ghost,
+.steel,
+.fire,
+.water,
+.grass,
+.electric,
+.psychic,
+.ice,
+.dragon,
+.dark,
+.fury,
+.unknown,
+.shadow,
+.fairy {
+  border-radius: 4px;
+  color: #fff;
+}
+.normal {
+  background-color: rgb(231, 225, 225);
+}
+.fighting {
+  background-color: rgb(238, 185, 12);
+}
+.flying {
+  background-color: rgb(10, 192, 238);
+}
+.poison {
+  background-color: rgb(85, 40, 168);
+}
+.ground {
+  background-color: rgb(255, 94, 0);
+}
+.rock {
+  background-color: rgb(83, 81, 81);
+}
+.bug {
+  background-color: #000;
+}
+.ghost {
+  background-color: rgb(219, 219, 219);
+}
+.steel {
+  background-color: rgb(138, 136, 136);
+}
+.fire {
+  background-color: rgb(216, 70, 70);
+}
+.water {
+  background-color: rgb(4, 47, 240);
+}
+.grass {
+  background-color: rgb(15, 160, 15);
+}
+.electric {
+  background-color: rgb(211, 208, 9);
+}
+.psychic {
+  background-color: rgb(143, 136, 238);
+}
+.ice {
+  background-color: rgb(149, 243, 255);
+}
+.dragon {
+  background-color: rgb(139, 61, 9);
+}
+.dark {
+  background-color: #000;
+}
+.fury {
+  background-color: rgb(255, 196, 0);
+}
+.unknown {
+  background-color: #fff;
+}
+.shadow {
+  background-color: rgb(189, 148, 148);
+}
+.fairy {
+  background-color: rgb(83, 206, 185);
+}

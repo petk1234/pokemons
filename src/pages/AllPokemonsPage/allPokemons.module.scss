@@ -1,0 +1,6 @@
+.pokemonsPage {
+  display: grid;
+  width: 90vw;
+  grid-template-rows: 40px 40px 1fr;
+  row-gap: 15px;
+}

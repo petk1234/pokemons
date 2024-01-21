@@ -1,0 +1,13 @@
+.return {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  border-radius: 10px;
+  height: 30px;
+  padding: 12px 5px 5px 5px;
+  margin-top: 15px;
+}
+.return::before {
+  content: "<-";
+}
