@@ -25,7 +25,7 @@ const Filters = () => {
 
   const handleSearch = (value: string) => (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      dispatch(getPokemonByName(value));
+      dispatch(getPokemonByName(value.toLowerCase()));
       navigate("/" + value);
     }
   };

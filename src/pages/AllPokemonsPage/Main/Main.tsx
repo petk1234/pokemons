@@ -6,6 +6,7 @@ import { loadMorePokemons } from "../../../store/pokemons/controllers";
 import Spinner from "../../../components/Spinner/Spinner";
 import AsyncButton from "../../../components/AsyncButton/AsyncButton";
 import PokemonsList from "./PokemonsList/PokemonsList";
+import { ALL_TYPE } from "../../../store/pokemons/reducer";
 
 const Main = () => {
   const dispatch = useAppDispatch();
@@ -24,7 +25,7 @@ const Main = () => {
       {pokemons.length > 0 ? (
         <>
           <PokemonsList pokemons={pokemons} />
-          {currentType === "all" && (
+          {currentType === ALL_TYPE && (
             <AsyncButton isLoading={isLoading} handleClick={handleLoadMore} />
           )}
         </>

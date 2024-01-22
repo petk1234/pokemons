@@ -30,16 +30,14 @@ const PokemonPage = () => {
         <>
           <ReturnButton />
           {pokemonInfo && pokemonInfo !== NOT_FOUND_POKEMON && (
-            <div>
-              <li className={styles.pokemonInfoContainer}>
-                <img className={styles.pokemonInfoImage} src={pokemonInfo.img || notFoundImg}></img>
-                <h4 className={styles.pokemonInfoTitle}>{capitalLetter(pokemonInfo.name)}</h4>
-                <ul className={styles.pokemonInfoCharachteristics}>
-                  <Types types={pokemonInfo.types} />
-                  <Stats stats={pokemonInfo.stats} />
-                  <Moves moves={pokemonInfo.moves} />
-                </ul>
-              </li>
+            <div className={styles.pokemonInfoContainer}>
+              <img className={styles.pokemonInfoImage} src={pokemonInfo.img || notFoundImg}></img>
+              <h4 className={styles.pokemonInfoTitle}>{capitalLetter(pokemonInfo.name)}</h4>
+              <ul className={styles.pokemonInfoCharachteristics}>
+                <Types types={pokemonInfo.types} />
+                <Stats stats={pokemonInfo.stats} />
+                <Moves moves={pokemonInfo.moves} />
+              </ul>
             </div>
           )}
         </>

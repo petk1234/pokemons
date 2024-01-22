@@ -9,7 +9,6 @@ import { TypeProps } from "./types";
 const Types = ({ types }: TypeProps) => {
   const dispatch = useAppDispatch();
   const handleTypeSearch = (value: string) => {
-    console.log(value);
     dispatch(getPokemonsByType(value));
   };
 
@@ -17,13 +16,13 @@ const Types = ({ types }: TypeProps) => {
     <li className={styles.pokemonInfoRow}>
       <p className={styles.title}>Types</p>
       <div className={styles.charachteristics}>
-        {types.map((type) => (
+        {types.map(({ name }) => (
           <Link
-            key={type.name}
+            key={name}
             to={"/"}
-            onClick={() => handleTypeSearch(type.name)}
-            className={cx(styles.hoveredTab, stylesTypes.pokemonType, stylesTypes[type.name])}>
-            {type.name}
+            onClick={() => handleTypeSearch(name)}
+            className={cx(styles.hoveredTab, stylesTypes.pokemonType, stylesTypes[name])}>
+            {name}
           </Link>
         ))}
       </div>

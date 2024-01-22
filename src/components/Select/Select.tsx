@@ -5,7 +5,7 @@ import { ALL_TYPE } from "../../store/pokemons/reducer";
 
 const Select = ({ handleSearch, options, value }: Props) => {
   const [activeType, setActiveType] = useState("");
-  console.log(activeType, value);
+
   return (
     <div className={styles.selectWrapper}>
       <select
