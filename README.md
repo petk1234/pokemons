@@ -1,3 +1,31 @@
+Site url: https://65ae29de7077ff0a404d99de--voluble-griffin-864364.netlify.app/
+## This is a simple app that fetches pokemons from Pokedex api and displays them on the site. 
+## This site contains 3 pages: AllPokemonsPage, PokemonPage, BlankPage.
+## Used technologies: React, Typescript, Axios, REST API, Redux-toolkit, sass modules.
+
+# AllPokemonsPage components
+## Filters
+A tool that allows user to get pokemons of the specified type. You have just to choose a type you want to find from pop-up list and click on the 'find' button. Also you can search for a pokemon by an input field (you just need to enter pokemon's name). By pressing "Enter" button you will be redirected to the PokemonPage (in case a pokemon with searched name exists) or BlankPage (in case a pokemon with searched name does not exist).
+
+## PokemonsList
+A section that is responsible for displaying info (pokemons) from server. Each pokemon-info displayed in special component PokemonCard. So that, PokemonsList is made up of PokemonCards.
+
+## LoadMore button
+This is just a button that allows to load/show more pokemons in PokemonList section.
+
+# PokemonPage components
+## Types
+This component is created for processing and displaying types values from the store in appropriate way.
+
+## Moves
+This component is created for processing and displaying moves values from the store in appropriate way.
+
+## Stats
+This component is created for processing and displaying stats values from the store in appropriate way.
+
+## Return button
+Returns to the AllPokemonsPage.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
